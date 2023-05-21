@@ -69,7 +69,7 @@ public class UserController {
     public List<Food> getMenu(){
         return userService.getMenu();
     }
-
+//post mapping
     @PostMapping("/order/userEmail/{userEmail}/token/{token}")
     public ResponseEntity<Status>postOrder(@PathVariable String userEmail, @PathVariable String token,@RequestBody Order order){
         HttpStatus status;
